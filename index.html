@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>.:: Conectados 1.0 ::.</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript">
+
+		
+		
+
+		function calcular(){
+			var dato= document.miform.txtgb.value;
+			var chek1=document.miform.rbtgb.checked;
+			var chek2=document.miform.rbtgb.checked;
+			
+			if(chek1){
+				dato*= 1024;
+				alert(dato +"MB");
+				chek1.checked=false;
+				}
+				else {
+					dato/= 1024;
+					alert(dato +"GB");
+					false;
+					chek2.checked=false;
+				}
+			
+							
+			  				
+		}
+
+
+	</script>
+</head>
+<body>
+<div class="container">
+	<header>
+		<div id="logo"></div>
+		<h1>AYUDA OFFLINE</h1>
+		<div style="clear:both"></div>
+	</header>
+	<nav class="nav-main">
+			<ul>
+				<li><a class="nav-item" href="">Inicio</a></li>
+				<li><a class="nav-item" href="">Telefonia</a></li>
+				<li><a class="nav-item" href="frmtigostar.html">Tigostar</a></li>
+				<li><a class="nav-item" href="">Tigo Money</a></li>
+				<li><a class="nav-item" href="">Smart Apps</a></li>
+				
+			</ul>
+		</nav>
+		
+	<section>
+		<div class="">
+			<h2>TELEFONIA</h2>
+		</div>
+		
+	
+		<div id="calc">
+			<form id="miform" name="miform" action="">
+				<table id="tb-calc" >
+					<tr>
+						<td>
+							Seleccione
+
+
+						</td>
+						<td>
+							<input type="radio"  name="rbts" id="rbtgb" value="1024" ><label for="rbtgb">GB a MB</label><br>
+							<input type="radio" name="rbts" value="2" defaultValue><label for="rbtmb">MB a GB </label>
+						</td>
+					</tr>
+					<tr>
+						<td>Ingrese valor a Calcular:</td>
+						<td><input type="text" name="txtgb" id="txtgb" placeholder="Cantidad a Calcular"></td>
+					</tr>
+					<tr>
+						<td>
+						<input type="Button" onclick="calcular()" value="Calcular"></td>
+					</tr>
+				</table>
+				
+			</form>
+		</div>
+	</section>
+	<footer><small>By Gabo Ramos S</small></footer>
+	</div>
+</body>
+</html><html>
+</html>
